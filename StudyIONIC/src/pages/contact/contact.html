@@ -7,8 +7,10 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button>Contact 'Hoang'</button>
-  <button ion-button>Contact 'Khoa'</button>
+  <button ion-button (click)="onLoadContact('Hoang')">Contact 'Hoang'</button>
+  <button ion-button (click)="onLoadContact('Khoa')">Contact 'Khoa'</button>
 </ion-content>
 
-<ion-footer> This is Footer</ion-footer>
+<ion-footer>
+<p>This is Footer</p>
+</ion-footer>
