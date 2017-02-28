@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core"
-import {NavParams} from "ionic-angular";
+import {NavParams, NavController} from "ionic-angular";
 
 @Component({
     selector: 'page-acontact',
@@ -7,10 +7,16 @@ import {NavParams} from "ionic-angular";
 })
 export class aContactPage implements OnInit{
     name:string;
-    constructor (private navParams: NavParams){
+    constructor (private navParams: NavParams, private navCtrl: NavController){
 
     }
     ngOnInit(){
         this.name = this.navParams.get('contactName');
+    }
+    GoToBack(){
+      this.navCtrl.pop();
+    }
+    GoToHome(){
+      this.navCtrl.popToRoot();
     }
 }

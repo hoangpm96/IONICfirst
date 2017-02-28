@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import {aContactPage} from "./acontact/acontact";
+import {bContactPage} from "./_contact/bcontact";
 
 @Component({
   selector: 'page-contact',
@@ -14,6 +15,9 @@ export class ContactPage {
     }
   onLoadContact(name: string) {
     this.navCtrl.push(aContactPage, {contactName: name})
+  }
+  onLoadbContact(name: string) {
+    this.navCtrl.push(bContactPage, {contactName: name})
   }
 
 }

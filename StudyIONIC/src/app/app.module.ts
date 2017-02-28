@@ -6,6 +6,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import {aContactPage} from "../pages/contact/acontact/acontact";
+import {bContactPage} from "../pages/contact/_contact/bcontact";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {aContactPage} from "../pages/contact/acontact/acontact";
     ContactPage,
     HomePage,
     TabsPage,
-    aContactPage
+    aContactPage,
+    bContactPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import {aContactPage} from "../pages/contact/acontact/acontact";
     ContactPage,
     HomePage,
     TabsPage,
-    aContactPage
+    aContactPage,
+    bContactPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
