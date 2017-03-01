@@ -13,9 +13,6 @@ export class aContactPage implements OnInit{
     ngOnInit(){
         this.name = this.navParams.get('contactName');
     }
-    GoToBack(){
-      this.navCtrl.pop();
-    }
     GoToHome(){
       this.navCtrl.popToRoot();
     }
